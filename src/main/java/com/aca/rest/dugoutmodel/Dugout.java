@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 
 public class Dugout {
 	
-	private String team;
+	private String teams;
 	//private String addTeam;
 	//private String removeTeam;
 	private Integer yearFounded;
