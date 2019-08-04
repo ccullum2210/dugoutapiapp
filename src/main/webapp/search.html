@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Search</title>
+</head>
+<body>
+<!-- 
+	<div class="container" ng-init="getMovies()">
+	<div ng-show="showSearch">
+		<table class="table table-hover table-bordered">
+			<tr>
+				<td colspan="1" class="text-center success">
+					<button type="button" ng-click="getMovies()" 
+						class="btn btn-success"> <span class="glyphicon glyphicon-refresh"></span>
+						Refresh Movies
+					</button>
+				</td>
+				<td colspan="3" class='text-center success'>
+					<span key="search">Search</span>
+					<input type="text" maxlength="15" ng-model="searchValue">
+				</td>
+			
+				<td colspan="7" class='text-center success'>
+					<h4>CC Movie Dojo</h4>
+				</td>
+			</tr>
+			<tr class='success'>
+				<th class="text-center col-sm-2">Title</th>
+				<th class="text-center col-sm-2">Genre</th>
+				<th class="text-center col-sm-2">Release Year</th>
+				<th class="text-center col-sm-2">Key</th>
+				<th class="text-center col-sm-2">Create Date</th>
+				<th class="text-center col-sm-2">Update Date</th>
+			</tr>
+			<tr ng-repeat="movie in movies | filter : searchValue" ng-click="updateMovie(movie)">
+				<td class="col-sm-2">{{movie.title}}</td>
+				<td class="col-sm-2 text-center">{{movie.genre}}</td>
+				<td class="col-sm-2 text-center">{{movie.releaseYear}}</td>
+				<td class="col-sm-2 text-center">{{movie.key}}</td>
+				<td class="col-sm-2">{{movie.createDT | limitTo:10}}</td>
+				<td class="col-sm-2">{{movie.updateDT | limitTo:10}}</td>
+			</tr>
+			<tr>
+							
+				<td colspan="12" class='text-left success'>
+					<h4>select a movie for update</h4>
+				</td>
+			</tr>
+			
+		</table>
+	</div>
+	
+	<form name="updateForm">
+	
+	<div ng-show="showEditDelete">	
+			
+		<h5>Press 'Update' to save movie changes.</h5>
+		<h5>Press 'Delete' to delete movie.</h5>
+		<h5>Press 'Cancel' to return to movie search.</h5>		
+		
+		<div class="header">
+			<button type="button" ng-click="putMovie(movieToUpdate)" ng-disabled="isUpdateButtonDisabled"
+				class="btn btn-success"> <span class="glyphicon glyphicon-edit"></span>Update</button>
+			<button type="button" ng-click="deleteMovie(movieToUpdate.key)" ng-disabled="isDeleteButtonDisabled"  
+			class="btn btn-danger"> <span class="glyphicon glyphicon-edit">
+			</span>Delete</button>	
+			<button type="button" ng-click="returnToSearch(movieToUpdate.key)" 
+				class="btn btn-warning"> <span class="glyphicon"></span>Cancel</button>					
+		</div>
+			
+			<br>
+			<table  class="table table-bordered small-table">						
+				<tr>							
+					<td><label for="key">Key:</label>
+						<span id="key" ng-bind="movieToUpdate.key"></span>
+					</td>
+				</tr>						
+				<tr>							
+					<td><label for="title">Title:</label><br>
+						<input id="title" type="text" ng-model="movieToUpdate.title" size=40/>
+					</td>
+				</tr>	
+				<tr>
+					<td><label for="genre">Genre:</label>
+					<select ng-options="value for value in genres" 
+						ng-model="movieToUpdate.genre">
+					</select>
+					<tr>
+						<td>
+							<label for="releaseYear">Release Year:</label><br>
+							<input type="number" min="1950" max="2020" name="releaseYear"
+								ng-model="movieToUpdate.releaseYear" required>
+								
+							<div>
+								<span class="text-danger" 
+									ng-show="updateForm.releaseYear.$error.required">
+									Release Year is Required!
+									<br>
+								</span>
+								<span class="text-danger" ng-hide="updateForm.releaseYear.$valid">
+									Must be a number bewtween 1950 and 2020.
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p> <span class="text-warning" ng-bind="updateStatus"><</span></p>
+						</td>
+					</tr>
+				</tr>																	
+			</table>				
+			<br>							
+		</div>
+		</form>
+	</div>
+	-->
+</body>
+</html>
